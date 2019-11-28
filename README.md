@@ -30,14 +30,20 @@ restore command:
 influxd restore 
 
     [ -db <db_name> ]       --> backup database name
+    
     -portable | -online
+    
     [ -host <host:port> ]    --> influxdb host and port
+    
     [ -newdb <newdb_name> ]  --> new database name to restore
+    
     [ -rp <rp_name> ]        --> backup retention policies
+    
     [ -newrp <newrp_name> ]  --> restore retention policies
+    
     [ -shard <shard_ID> ]
+    
     <path-to-backup-files>   -->backup file path
-
 
 example:
 influxd restore -portable -db myDB -newdb myDB_2 /tmp/data  -->restore to an unexisted database.
