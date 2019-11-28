@@ -6,11 +6,17 @@ Some useful cmd for backup and restore DB:
 backup command:
 ---------------
 influxd backup
+
     [ -database <db_name> ]  --> database name to backup
+    
     [ -portable ]            --> generates backup files in the newer InfluxDB Enterprise-compatible format.
+    
     [ -host <host:port> ]    --> host and port (use default)
+    
     [ -retention <rp_name> ] | [ -shard <shard_ID> -retention <rp_name> ]  --> backup retention policies
+    
     [ -start <timestamp> [ -end <timestamp> ] | -since <timestamp> ]   --> start stop time for backup
+    
     <path-to-backup>   --> backup path
 
 example: 
