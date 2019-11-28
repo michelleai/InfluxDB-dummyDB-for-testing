@@ -28,6 +28,7 @@ example:
 restore command:
 ---------------
 influxd restore 
+
     [ -db <db_name> ]       --> backup database name
     -portable | -online
     [ -host <host:port> ]    --> influxdb host and port
